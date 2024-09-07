@@ -1,0 +1,23 @@
+.bigcircle{
+    pointer-events: none;
+    width: 40px;
+    height: 40px;
+    border: 32px solid green;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 50;
+}
+.smallcircle{
+    width: 8px;
+    height: 8px;
+    background: orange;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 50;
+}
+
+.custom-cursor {
+    cursor: url('../../assets/play_icon.png') 40 40, auto;
+  /* width: 20px;
+  height: 20px; */
+  }

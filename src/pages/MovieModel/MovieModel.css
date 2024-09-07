@@ -1,0 +1,155 @@
+.movies {
+    /* padding-top: 65px; */
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 65px 6% 0 6%;
+}   
+.title {
+    display: flex;
+    background: #181818;
+    padding: 10px;
+    margin: 30px 0 10px 0;
+    text-transform: uppercase;
+}
+.title p {
+    padding: 5px;
+    color: #cccccc;
+}
+.title a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.title a:hover {
+    background: #333333;
+}
+
+.arrange {
+    background: #383838;
+    color: white;
+    /* border: none; */
+    padding: 5px;
+    margin: 0 0 15px 0;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+/* .list-movies {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0;
+    gap: 10px;
+} */
+
+
+.other-movies {
+    width: 30%;
+    padding: 0 10px;
+}
+.other-movies h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #da966e;
+    margin-bottom: 20px;
+}
+
+.adult {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: red;
+    z-index: 2;
+}
+
+.upcoming {
+    margin-bottom: 30px;
+}
+
+.upcoming-movies {
+    display: flex;
+}
+.gray-background {
+    background: #181818;
+    border-radius: 6px;
+}
+
+.upcoming-movies img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+.upcoming-describe {
+    padding-left: 10px;
+    font-size: 13px;
+
+}
+.upcoming-movies h3 {
+    font-weight: 600;
+    cursor: pointer;
+}
+.upcoming-movies h3:hover {
+    color: #da966e;
+}
+
+.trending-movies {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.ratings {
+    width: 25px;
+    height: 25px;
+    background: #c58560;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trending-describe{
+    padding-left: 10px;
+    font-size: 13px;
+}
+.trending-describe h3 {
+    cursor: pointer;
+}
+.trending-describe p {
+    margin-top: 5px;
+}
+.trending-describe h3:hover {
+    color: #c58560;
+}
+
+
+
+@media (max-width: 1024px){
+    .other-movies {
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    .movies {
+        padding: 20px 6%;
+    }
+
+}
+
+/* @media (max-width: 500px){
+    .list-movies {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+} */

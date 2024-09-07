@@ -1,0 +1,171 @@
+.hero-img {
+    position: relative;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    padding: 70px 6% 10px 6%;
+}
+.detail {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    z-index: 2;
+}
+.image-detail {
+    position: relative;
+    display: flex;
+}
+/* .play {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,.88), rgba(0,0,0,.3));
+    cursor: pointer;
+} */
+.play {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translate(-50%, -50%); */
+    visibility: hidden; /* Ẩn phần tử khi không hover */
+    opacity: 0;
+    background:  rgba(0,0,0,.3);
+    cursor: pointer;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+  
+  .image-detail:hover .play {
+    visibility: visible; /* Hiển thị phần tử khi hover */
+    opacity: 1;
+  }
+.description {
+    width: 100%;
+    padding: 10px 30px;
+}
+.description h2 {
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.description h2 p {
+    color: rgb(156 163 175);;
+    padding: 0 5px;
+}
+.description i {
+    color: rgb(156 163 175);;
+    font-size: 14px;
+}
+.description .icon {
+    width: 20px;
+    height: 20px;
+}
+.release_date {
+    display: flex;
+}
+.release_date p {
+    padding-left: 5px;
+}
+.user-score {
+    padding: 10px 0;
+}
+.overview {
+    overflow: hidden;
+}
+.overview h3 {
+    font-size: 18px;
+    padding: 10px 0;
+}
+.overview p {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Giới hạn số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.genres {
+    padding: 20px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.btn-add {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    background: rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+.btn-add:hover {
+    background: rgba(179, 175, 175, 0.3);
+}
+.btn {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid greenyellow;
+    background: rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    color: greenyellow;
+    /* cursor: pointer; */
+}
+.btn-genres {
+    padding: 5px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color:rgba(156, 163, 175, 0.208);
+    cursor: pointer;
+}
+.cast {
+    padding: 10px 6% 10px 6%;
+    width: 100%;
+    overflow: hidden;
+}
+.videos {
+    padding: 10px 6% 6% 6%;
+    width: 100%;
+}
+h2 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+.list-cast {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+.list-cast img {
+    display: inline-block;
+    width: 120px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.list-cast::-webkit-scrollbar {
+    height: 15px; /* Chiều cao của thanh cuộn */
+}
+  
+.list-cast::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.5); /* Màu của thanh cuộn */
+    border-radius: 4px;
+}
+  
+.list-cast::-webkit-scrollbar-track {
+    background-color: rgba(66, 64, 64, 0.571); /* Màu nền của thanh cuộn */
+}
+
